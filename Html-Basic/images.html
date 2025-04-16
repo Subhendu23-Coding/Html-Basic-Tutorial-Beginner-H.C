@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/31519543/pexels-photo-31519543/free-photo-of-assorted-coffee-drinks-on-a-tray-in-yunnan-cafe.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="300px" alt="no images">
+    <img src="./flower.jpg" width="285px" alt="no images">
+
+
+    <picture>
+        <source media="(min-width: 650)" srcset="./flower.jpg" />
+        <source media="(min-width: 450)" srcset="./man.jpg" />
+        <img src="./flower.jpg" width="100px" alt="no images">
+    </picture>
+
+    
+<!-- an image map generator -->
+
+<img src="map.jpg" width="400px" usemap="#image-map">
+<map>
+    <area onclick="one()" href="javascript:void(0)" alt="Area 1" title="Area 1" coords="65,106,324,636" shape="rect">
+    <area onclick="two()" href="javascript:void(0)" alt="Area 2" title="Area 2" coords="65,196,194,346" shape="rect">
+</map>
+<script>
+    function one(){
+        alert("You Clicked on one")
+    }
+    function two(){
+        alert("You Clicked on two")
+    }
+</script>
+</body>
+</html>
